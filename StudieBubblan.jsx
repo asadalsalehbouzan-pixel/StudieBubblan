@@ -59,7 +59,7 @@ const App = () => {
   const [isChatLoading, setIsChatLoading] = useState(false);
   const chatEndRef = useRef(null);
 
-  const apiKey = ""; 
+  const apiKey = "AIzaSyBsnwqTbBvKVOC8yEp0AqoYwgM-_j_ixGA"; 
 
   const subjects = [
     { 
@@ -760,5 +760,6 @@ const App = () => {
     </div>
   );
 };
+
 
 export default App;
