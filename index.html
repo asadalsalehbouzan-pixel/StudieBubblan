@@ -1,32 +1,18 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="sv">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>StudieBubblan - Din AI-Lärare</title>
-<!-- Tailwind CSS för styling -->
-<script src="https://www.google.com/search?q=https://cdn.tailwindcss.com"></script>
-<!-- Google Fonts -->
-<link href="https://www.google.com/search?q=https://fonts.googleapis.com/css2%3Ffamily%3DInter:wght%40400%3B500%3B700%3B900%26display%3Dswap" rel="stylesheet">
-<style>
-body {
-margin: 0;
-font-family: 'Inter', sans-serif;
-background-color: #f8fafc;
-}
-#root {
-min-height: 100vh;
-}
-</style>
-</head>
-<body>
-<!-- Här laddas din React-app in -->
-<div id="root"></div>
-
-<!-- Kopplingen till din kodfil -->
-<script type="module" src="/App.jsx"></script>
-
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudieBubblan - Din AI-Lärare</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body { margin: 0; font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+      #root { min-height: 100vh; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Ändrad sökväg: Vi tar bort /src/ eftersom App.jsx ligger i roten enligt din bild -->
+    <script type="module" src="/App.jsx"></script>
+  </body>
 </html>
