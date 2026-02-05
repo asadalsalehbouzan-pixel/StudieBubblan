@@ -1,17 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Denna konfiguration talar om för Vite hur appen ska byggas
 export default defineConfig({
   plugins: [react()],
-  // Viktigt: Säkerställer att index.html i roten används som ingångspunkt
-  root: './',
   build: {
     outDir: 'dist',
-    rollupOptions: {
-      input: {
-        main: 'index.html',
-      },
-    },
   },
+  server: {
+    port: 3000
+  }
 });
