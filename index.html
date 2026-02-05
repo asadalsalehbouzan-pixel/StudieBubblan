@@ -1,12 +1,32 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+<!DOCTYPE html>
 
-export default defineConfig({
-  plugins: [react()],
-  build: {
-    outDir: 'dist',
-  },
-  server: {
-    port: 3000
-  }
-});
+<html lang="sv">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>StudieBubblan - Din AI-Lärare</title>
+<!-- Tailwind CSS för styling -->
+<script src="https://www.google.com/search?q=https://cdn.tailwindcss.com"></script>
+<!-- Google Fonts -->
+<link href="https://www.google.com/search?q=https://fonts.googleapis.com/css2%3Ffamily%3DInter:wght%40400%3B500%3B700%3B900%26display%3Dswap" rel="stylesheet">
+<style>
+body {
+margin: 0;
+font-family: 'Inter', sans-serif;
+background-color: #f8fafc;
+}
+#root {
+min-height: 100vh;
+}
+</style>
+</head>
+<body>
+<!-- Här laddas din React-app in -->
+<div id="root"></div>
+
+<!-- Kopplingen till din kodfil -->
+<script type="module" src="/App.jsx"></script>
+
+
+</body>
+</html>
