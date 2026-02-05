@@ -1,14 +1,17 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// Denna konfiguration gör att Vite kan hantera React-filer (.jsx) 
-// och bygga projektet korrekt för publicering på Vercel.
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  // Vi definierar roten som nuvarande mapp eftersom dina filer ligger där
+  root: './',
   build: {
-    outDir: 'dist', // Mappen där den färdiga webbsidan hamnar efter bygget
+    // Vercel förväntar sig att den färdiga koden hamnar i 'dist'
+    outDir: 'dist',
   },
   server: {
-    port: 3000
+    // Säkerställer att preview fungerar lokalt om du testar där
+    host: true
   }
-});
+})
